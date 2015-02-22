@@ -43,6 +43,6 @@ printlog "Installing sassc"
 mkdir -p $INSTALL_DIR/bin
 cp $SASSC_DIR/bin/sassc $INSTALL_DIR/bin/sassc
 
-mkdir -p $PROFILE_PATH
-echo "export PATH=\$PATH:$INSTALL_DIR/bin" > $PROFILE_PATH/sassc.sh
+mkdir -p $PROFILE_DIR
+echo "export PATH=\$PATH:$INSTALL_DIR/bin" > $PROFILE_DIR/sassc.sh
 
