@@ -1,5 +1,5 @@
 #!/bin/bash
 
-#this pack is valid for all apps
+# This pack is valid for all apps
 echo "sassc"
 exit 0
