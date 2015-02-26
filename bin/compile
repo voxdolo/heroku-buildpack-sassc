@@ -37,7 +37,7 @@ fi
 cd $SASSC_DIR
 run_silent "git checkout 3.1.0"
 printlog "Building sassc"
-SASS_LIBSASS_PATH=$LIBSASS_DIR make build-static
+run_silent 'SASS_LIBSASS_PATH=$LIBSASS_DIR make build-static'
 
 printlog "Installing sassc"
 mkdir -p $INSTALL_DIR/bin
