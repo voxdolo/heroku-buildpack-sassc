@@ -21,6 +21,8 @@ run_silent() {
     $1 > /dev/null 2>&1
 }
 
+mkdir -p $CACHE_DIR
+
 if [[ ! -d "$LIBSASS_DIR/.git" ]]; then
     printlog "Downloading libsass"
     run_silent "git clone https://github.com/sass/libsass.git $LIBSASS_DIR"
@@ -37,7 +39,7 @@ fi
 cd $SASSC_DIR
 run_silent "git checkout 3.1.0"
 printlog "Building sassc"
-run_silent 'SASS_LIBSASS_PATH=$LIBSASS_DIR make build-static'
+run_silent "SASS_LIBSASS_PATH=$LIBSASS_DIR make build-static"
 
 printlog "Installing sassc"
 mkdir -p $INSTALL_DIR/bin
