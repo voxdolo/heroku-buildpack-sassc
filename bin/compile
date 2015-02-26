@@ -10,7 +10,7 @@ INSTALL_DIR="$BUILD_DIR/.heroku/sassc"
 PROFILE_DIR="$BUILD_DIR/.profile.d"
 
 indent() {
-    sed -u 's/^/ /'
+    sed -u 's/^/       /'
 }
 
 printlog() {
