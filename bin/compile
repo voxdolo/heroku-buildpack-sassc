@@ -49,6 +49,8 @@ cp $SASSC_DIR/bin/sassc $INSTALL_DIR/bin/sassc
 mkdir -p /app/.heroku/bin/bin
 cp $SASSC_DIR/bin/sassc /app/.heroku/bin/sassc # doubly certain it gets installed
 
+ls /app/.heroku/bin/
+
 mkdir -p $PROFILE_DIR
 echo "export PATH=\$PATH:\$HOME/$INSTALL_PATH/bin" > $PROFILE_DIR/sassc.sh
 
