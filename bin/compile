@@ -29,7 +29,7 @@ if [[ ! -d "$LIBSASS_DIR/.git" ]]; then
     run_silent "git clone https://github.com/sass/libsass.git $LIBSASS_DIR"
 fi
 cd $LIBSASS_DIR
-run_silent "git checkout 3.1.0"
+run_silent "git checkout 3.3.2"
 printlog "Building libsass"
 run_silent "make static"
 
@@ -38,7 +38,7 @@ if [[ ! -d "$SASSC_DIR/.git" ]]; then
     run_silent "git clone https://github.com/sass/sassc.git $SASSC_DIR"
 fi
 cd $SASSC_DIR
-run_silent "git checkout 3.1.0"
+run_silent "git checkout 3.3.2"
 printlog "Building sassc"
 SASS_LIBSASS_PATH=$LIBSASS_DIR make build-static
 
