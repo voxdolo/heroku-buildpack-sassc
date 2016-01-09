@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "-----> Install sassc v3.1.0"
+echo "-----> Install sassc v3.3.2"
 
 BUILD_DIR=$1
 CACHE_DIR="$2/sassc"
